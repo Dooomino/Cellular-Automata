@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    background: black;
+    color: white;
+}
+
+.display {
+    margin: 10% 5%;
+}
+
+.controls {
+    width: 30%;
+    margin: 10% 5%;
+    text-align: center;
+}
+
+.inputs {
+    margin: 5% 0;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    outline: none;
+}
+
+input {
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    border-radius: 5px;
+    height: 5px;
+}
+
+input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #76b0ff;
+    cursor: pointer;
+    transition: width 500ms, height 500ms;
+}
+
+input::-webkit-slider-thumb:hover {
+    width: 35px;
+    height: 35px;
+}
+
+input::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #76b0ff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: width 500ms, height 500ms;
+}
+
+input::-moz-range-thumb:hover {
+    width: 35px;
+    height: 35px;
+}
+
+.controls label {
+    font-size: 22px;
+    word-wrap: normal;
+    width: 100%;
+    text-align: center;
+}
+
+.controls label::after {
+    content: "\A";
+    white-space: pre;
+}
+
+.controls input {
+    margin: 5% 10%;
+    width: 60%;
+}
+
+
+.button {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+#redraw {
+    width: 20%;
+    color: black;
+    background: white;
+    border-radius: 0;
+    cursor: pointer;
+    font-size: 24px;
+    margin: 2%;
+    text-align: center;
+    user-select: none;
+    transition: border-radius 300ms, width 500ms, background 700ms;
+}
+
+#redraw:hover {
+    width: 25%;
+    border-radius: 30%;
+    background: rgb(206, 240, 255);
+}
+
+.full-contain {
+    display: inline-flex;
+    text-align: center;
+    width: 100%;
+}
